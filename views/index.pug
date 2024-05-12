@@ -1,15 +1,16 @@
 extends layout
 
 block content
-  h1 Local Library Home
-  p Welcome to LocalLibrary, your go-to destination for exploring a vast collection of books online. Whether you're an avid reader or just starting your reading journey, our website offers a plethora of literary treasures waiting to be discovered.
+  h1= title
+  p Welcome to #[em LocalLibrary], your go-to destination for exploring a vast collection of books online. Whether you're an avid reader or just starting your reading journey, our website offers a plethora of literary treasures waiting to be discovered.
 
-  // Update the dynamic content
   h2 Dynamic content
-  p The library currently boasts an impressive collection:
+
+  p The library has the following record counts:
+
   ul
-    li Books: #{bookCount}
-    li Copies: #{copyCount}
-    li Copies available: #{availableCopyCount}
-    li Authors: #{authorCount}
-    li Genres: #{genreCount}
+    li #[strong Books:] #{book_count}
+    li #[strong Copies:] #{book_instance_count}
+    li #[strong Copies available:] #{book_instance_available_count}
+    li #[strong Authors:] #{author_count}
+    li #[strong Genres:] #{genre_count}
