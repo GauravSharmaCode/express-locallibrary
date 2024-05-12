@@ -1,16 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #[em LocalLibrary], a very basic Express website developed as a tutorial example on the Mozilla Developer Network.
+  h1 Local Library Home
+  p Welcome to LocalLibrary, your go-to destination for exploring a vast collection of books online. Whether you're an avid reader or just starting your reading journey, our website offers a plethora of literary treasures waiting to be discovered.
 
+  // Update the dynamic content
   h2 Dynamic content
-
-  p The library has the following record counts:
-
+  p The library currently boasts an impressive collection:
   ul
-    li #[strong Books:] !{book_count}
-    li #[strong Copies:] !{book_instance_count}
-    li #[strong Copies available:] !{book_instance_available_count}
-    li #[strong Authors:] !{author_count}
-    li #[strong Genres:] !{genre_count}
+    li Books: #{bookCount}
+    li Copies: #{copyCount}
+    li Copies available: #{availableCopyCount}
+    li Authors: #{authorCount}
+    li Genres: #{genreCount}
