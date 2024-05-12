@@ -1,4 +1,3 @@
-LocalLibrary Express Project
 Welcome to the LocalLibrary Express project! This project serves as an example of a website designed to manage the catalog for a local library. The README provides an overview of the project, its objectives, and prerequisites.
 
 Overview
